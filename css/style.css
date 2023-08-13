@@ -952,6 +952,9 @@ body.modal-open {
 .client_section .box {
   position: relative;
 }
+.client_section .box .clientModalBox {
+  cursor: pointer;
+}
 
 .client_section .client_content-box {
   display: -webkit-box;

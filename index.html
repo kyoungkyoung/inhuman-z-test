@@ -207,7 +207,7 @@
                   컨텐츠에 대한 수익을 창출할 수 있고, 광고주는 목표 그룹에게
                   정확하게 광고를 전달할 수 있습니다.
                 </p>
-                <a href=""> Read More </a>
+                <a href="./about.html"> Read More </a>
               </div>
             </div>
           </div>
@@ -223,13 +223,6 @@
         <!-- ------------------------------------- -->
         <!-- 광고매칭 동영상 넣는 부분 -->
         <!-- <img src="./assets/images/about-img.png" class="about-img" alt="" /> -->
-        <!-- <video class="about-img"> -->
-        <!-- <source src="./assets/video/sample.mp4" type="video/mp4" /> -->
-        <!-- <source src="sample.ogg" type="video/ogg" /> -->
-        <!-- <source src="sample.webm" type="video/webm" /> -->
-        <!-- 이 브라우저에서 지원하지 않는 영상입니다 -->
-        <!-- 영상이 안나올 경우 표시될 멘트 -->
-        <!-- </video> -->
         <video
           id="my-player"
           class="video-js about-img vjs-big-play-button"
@@ -239,10 +232,10 @@
         >
           <source src="./assets/video/sample.mp4" type="video/mp4" />
           <!-- <source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4"></source>
-      <source src="//vjs.zencdn.net/v/oceans.webm" type="video/webm"></source>
-      <source src="//vjs.zencdn.net/v/oceans.ogv" type="video/ogg"></source> -->
+          <source src="//vjs.zencdn.net/v/oceans.webm" type="video/webm"></source>
+          <source src="//vjs.zencdn.net/v/oceans.ogv" type="video/ogg"></source> -->
           <p class="vjs-no-js">
-            <!-- 동영상 확장자 맞지 않을때 나오는 문구 -->
+            <!-- 동영상 확장자 맞지 않을때(영상이 나오지 않을 경우) 표시되는 문구 -->
             To view this video please enable JavaScript, and consider upgrading
             to a web browser that
             <a href="https://videojs.com/html5-video-support/" target="_blank">
@@ -268,7 +261,18 @@
                 영상실사형 버츄얼 휴먼과 게임캐릭터형 메타휴먼,에니메이션
                 판타지풍의 본인만의 3D캐릭터를 만들고 사용하실수있습니다.
               </p>
-              <a href=""> See More </a>
+
+              <!-- 화면 넘기기 -->
+              <!-- <a href=""> -->
+
+              <!-- 모달창 띄우기 -->
+              <a
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#galleryModal"
+              >
+                See More
+              </a>
             </div>
           </div>
         </div>
@@ -453,7 +457,18 @@
                   새로운 창작물을 관람하고 자신만의 작품을 신청하여 본인만의
                   캐릭터를 제작활용 사용해보세요.
                 </p>
-                <a href=""> Read More </a>
+                <!-- 페이지 넘기기 -->
+                <!-- <a href="">  -->
+
+                <!-- 모달창 띄우기 -->
+                <a
+                  href=""
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#blogModal"
+                >
+                  Read More
+                </a>
               </div>
             </div>
           </div>
@@ -646,8 +661,7 @@
                   >
                     <div class="carousel-inner">
                       <div
-                        class="carousel-item active"
-                        class="btn btn-primary"
+                        class="carousel-item active clientModalBox"
                         data-toggle="modal"
                         data-target="#clientModal"
                       >
@@ -663,8 +677,7 @@
                         </div>
                       </div>
                       <div
-                        class="carousel-item"
-                        class="btn btn-primary"
+                        class="carousel-item clientModalBox"
                         data-toggle="modal"
                         data-target="#clientModal"
                       >
@@ -680,8 +693,7 @@
                         </div>
                       </div>
                       <div
-                        class="carousel-item"
-                        class="btn btn-primary"
+                        class="carousel-item clientModalBox"
                         data-toggle="modal"
                         data-target="#clientModal"
                       >

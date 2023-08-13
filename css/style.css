@@ -526,7 +526,7 @@ a:focus {
   position: relative;
   background-repeat: no-repeat;
   margin-top: -125px;
-  border-radius: 45%;
+  border-radius: 0 0 0 30%;
   overflow: hidden;
   position: relative;
   -webkit-transform: rotate(-25deg);
@@ -673,8 +673,8 @@ a:focus {
 
 .about_section .img-box .about-img {
   width: 100%;
-  /* -webkit-transform: rotate(-25deg); */
-  /* transform: rotate(-25deg); */
+  -webkit-transform: rotate(25deg);
+  transform: rotate(25deg);
   -webkit-animation: hueAnimate 0.7s infinite;
   animation: hueAnimate 0.7s infinite;
 }

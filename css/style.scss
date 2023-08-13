@@ -3,8 +3,7 @@ $black: #000000;
 $btnColor: #fad932;
 
 // import fonts
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;500;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;500;700&display=swap");
 
 @font-face {
   font-family: "Andale Mono";
@@ -50,7 +49,8 @@ body {
   background-color: #031003;
 }
 
-p {}
+p {
+}
 
 .layout_margin {
   margin-top: 90px;
@@ -120,8 +120,6 @@ p {}
   .info_section .social_box {
     filter: invert(100%);
   }
-
-
 }
 
 .header_section .container-fluid {
@@ -169,7 +167,6 @@ p {}
 
 .custom_menu-btn .s-2 {
   transition: all 0.1s;
-
 }
 
 .menu_btn-style {
@@ -282,7 +279,7 @@ a:focus {
 }
 
 .custom_nav-container .nav_search-btn {
-  background-image: url(../images/search-icon.png);
+  background-image: url(../assets/images/search-icon.png);
   background-size: 18px;
   background-repeat: no-repeat;
   width: 35px;
@@ -313,7 +310,7 @@ a:focus {
 }
 
 .custom_nav-container .navbar-toggler .navbar-toggler-icon {
-  background-image: url(../images/menu.png);
+  background-image: url(../assets/images/menu.png);
   background-size: 55px;
 }
 
@@ -340,7 +337,6 @@ a:focus {
 
     span {
       color: $white;
-
     }
   }
 }
@@ -351,7 +347,8 @@ a:focus {
 .slider_section {
   padding-top: 45px;
 
-  .row {}
+  .row {
+  }
 
   #carouselExampleIndicators {
     flex: 1;
@@ -360,7 +357,6 @@ a:focus {
   .detail-box {
     color: $white;
     margin-top: 75px;
-
 
     h1 {
       font-size: 3rem;
@@ -383,7 +379,6 @@ a:focus {
 
     img {
       width: 100%;
-
     }
 
     &::before {
@@ -397,7 +392,6 @@ a:focus {
       z-index: 1;
       display: none;
     }
-
   }
 
   .carousel_control-box {
@@ -433,18 +427,12 @@ a:focus {
       }
     }
 
-
-
     .carousel-control-prev {
-      background-image: url(../images/prev.png);
-
-
+      background-image: url(../assets/images/prev.png);
     }
 
     .carousel-control-next {
-      background-image: url(../images/next.png);
-
-
+      background-image: url(../assets/images/next.png);
     }
   }
 
@@ -468,7 +456,6 @@ a:focus {
     }
 
     .ol_design {
-
       width: 20px;
       height: 20px;
       position: absolute;
@@ -477,9 +464,8 @@ a:focus {
       transform: translate(-50%, -50%);
       border-radius: 100%;
       background-color: $btnColor;
-      transition: all .3s;
+      transition: all 0.3s;
       z-index: 2;
-
     }
 
     // @keyframes indicatorAnimation {
@@ -502,20 +488,13 @@ a:focus {
       background-color: transparent;
     }
   }
-
-
 }
 
 // end slider section
 
-
-
-
 // about section
 
 .about_section {
-
-
   .detail-box {
     margin: 35px auto;
     position: relative;
@@ -602,11 +581,8 @@ a:focus {
     .about-img {
       width: 100%;
       transform: rotate(-25deg);
-      animation: hueAnimate .7s infinite;
+      animation: hueAnimate 0.7s infinite;
     }
-
-
-
   }
 
   .btn-box {
@@ -623,13 +599,9 @@ a:focus {
 
 // end about section
 
-
-
 // gallery section
 
 .gallery_section {
-
-
   .gallery_container {
     position: relative;
     max-width: 1500px;
@@ -652,8 +624,6 @@ a:focus {
     .gallery_box {
       width: 85%;
       margin: auto;
-
-
     }
 
     .box {
@@ -665,7 +635,8 @@ a:focus {
         }
       }
 
-      &.b2 {}
+      &.b2 {
+      }
 
       &.b3 {
         justify-content: flex-end;
@@ -706,12 +677,9 @@ a:focus {
 
 // end gallery section
 
-
 // blog section
 
 .blog_section {
-
-
   .detail-box {
     margin: 35px auto;
     position: relative;
@@ -759,7 +727,6 @@ a:focus {
       img {
         width: 100%;
       }
-
     }
 
     .blog-detail {
@@ -789,15 +756,9 @@ a:focus {
 
 // end blog section
 
-
-
-
-
 // client section
 
 .client_section {
-
-
   .client_container {
     position: relative;
     max-width: 1500px;
@@ -852,12 +813,9 @@ a:focus {
       border-radius: 35px;
 
       h4 {
-
         color: #1d1b28;
         font-weight: bold;
       }
-
-
 
       p {
         color: #1d1b28;
@@ -889,12 +847,12 @@ a:focus {
   }
 
   .carousel-control-prev {
-    background-image: url(../images/prev-arrow.png);
+    background-image: url(../assets/images/prev-arrow.png);
     left: -65px;
   }
 
   .carousel-control-next {
-    background-image: url(../images/next-arrow.png);
+    background-image: url(../assets/images/next-arrow.png);
     right: -65px;
   }
 
@@ -903,15 +861,11 @@ a:focus {
 
     img {
       width: 100%;
-
     }
   }
-
-
 }
 
 // end client section
-
 
 /* info section */
 .info_section {
@@ -1028,8 +982,6 @@ a:focus {
   max-width: 800px;
   margin: 30px auto;
 }
-
-
 
 .modal-body {
   position: relative;

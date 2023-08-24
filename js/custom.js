@@ -31,3 +31,43 @@ $("#carouselExampleIndicators").on("slid.bs.carousel", function (event) {
     });
   }
 });
+
+// var templateParams = {
+//   name: 'James',
+//   notes: 'Check this out!'
+// };
+
+// emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+//   .then(function(response) {
+//      console.log('SUCCESS!', response.status, response.text);
+//   }, function(error) {
+//      console.log('FAILED...', error);
+//   });
+
+// function sendMail() {
+
+//   var templateParams = {
+//     name: 'James',
+//     notes: 'Check this out!'
+// };
+
+// emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+//     .then(function(response) {
+//        console.log('SUCCESS!', response.status, response.text);
+//     }, function(error) {
+//        console.log('FAILED...', error);
+//     });
+
+//   var params = {
+//     name: document.getElementById("name").value,
+//     email: document.getElementById("email").value,
+//     phone: document.getElementById("phone").value,
+//     message: document.getElementById("message").value,
+//   };
+
+//   emailjs
+//     .send("service_1izy9nq", "template_6j3h1f2", params)
+//     .then(function (res) {
+//       alert("Sucess! " + res.status);
+//     });
+// }

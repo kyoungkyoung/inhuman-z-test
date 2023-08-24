@@ -30,11 +30,20 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-
     <!-- Custom styles for this template -->
     <link href=" css/style.css" rel="stylesheet" />
     <!-- responsive style -->
     <link href="css/responsive.css" rel="stylesheet" />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("AJ6IbrZLDe9eGOlcL");
+      })();
+    </script>
   </head>
 
   <body class="">
@@ -380,6 +389,24 @@
 
     <!-- end info section -->
 
+    <section class="contact">
+      <form>
+        <input type="text" placeholder="이름" id="email_name" required /> <br />
+        <input type="email" placeholder="이메일" id="email_email" required />
+        <br />
+        <input
+          type="text"
+          placeholder="연락처(숫자만 입력해주세요)"
+          id="email_phone"
+          required
+        />
+        <br />
+        <textarea placeholder="Message" id="email_message" required></textarea>
+        <br />
+        <button onclick="sendMail()">send</button>
+      </form>
+    </section>
+
     <!-- footer section -->
     <footer class="footer_section">
       <div class="container">
@@ -412,6 +439,60 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
     <script src="js/custom.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("AJ6IbrZLDe9eGOlcL");
+        // alert("init이 되냐고오오옹");
+      })();
+
+      function sendMail() {
+        alert("ddhsl");
+
+        var templateParams = {
+          name: $("#email_name").val(),
+          email: $("#email_email").val(),
+          phone: $("#email_phone").val(),
+          message: $("#email_message").val(),
+        };
+
+        alert(templateParams.name);
+
+        emailjs
+          .send("service_rwd6imp", "template_5nnlhui", {
+            name: $("#email_name").val(),
+            phone: $("#email_email").val(),
+            email: $("#email_phone").val(),
+            message: $("#email_message").val(),
+          })
+          .then(
+            function (res) {
+              alert(res);
+            },
+            function (err) {
+              alert(err);
+            }
+          );
+
+        // emailjs
+        //   .send("service_rwd6imp", "template_5nnlhui", templateParams)
+        //   .then(
+        //     function (response) {
+        //       alert(response);
+        //       alert("오니오니오니111");
+        //       console.log("SUCCESS!", response.status, response.text);
+        //     },
+        //     function (error) {
+        //       alert(error);
+        //       alert("오니오니오니111");
+        //       console.log("FAILED...", error);
+        //     }
+        //   );
+      }
+    </script>
   </body>
 </html>

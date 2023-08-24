@@ -514,6 +514,10 @@ a:focus {
   background-color: transparent;
 }
 
+#main-player .vjs-big-play-button {
+  display: none;
+}
+
 .about_section .detail-box {
   margin: 35px auto;
   position: relative;
@@ -521,16 +525,16 @@ a:focus {
 }
 
 .about_section .img-box {
-  width: 90%;
+  /* width: 90%; */
   margin: auto;
   position: relative;
   background-repeat: no-repeat;
-  margin-top: -125px;
-  border-radius: 0 0 0 30%;
+  /* margin-top: -125px; */
+  /* border-radius: 0 0 0 30%; */
   overflow: hidden;
   position: relative;
-  -webkit-transform: rotate(-25deg);
-  transform: rotate(-25deg);
+  /* -webkit-transform: rotate(-25deg); */
+  /* transform: rotate(-25deg); */
 }
 
 .about_section .img-box .play_btn {
@@ -672,11 +676,14 @@ a:focus {
 }
 
 .about_section .img-box .about-img {
-  width: 100%;
-  -webkit-transform: rotate(25deg);
-  transform: rotate(25deg);
-  -webkit-animation: hueAnimate 0.7s infinite;
-  animation: hueAnimate 0.7s infinite;
+  background: none;
+  width: 70%;
+  height: 900px;
+  margin: auto;
+  /* -webkit-transform: rotate(25deg); */
+  /* transform: rotate(25deg); */
+  /* -webkit-animation: hueAnimate 0.7s infinite; */
+  /* animation: hueAnimate 0.7s infinite; */
 }
 
 @-webkit-keyframes hueAnimate {
@@ -726,6 +733,17 @@ a:focus {
 .about_section .btn-box a:hover {
   background: transparent;
   color: #ffffff;
+}
+
+.about_section #aboutModal h5 {
+  color: black;
+}
+
+.about_section #aboutModal p {
+  color: black;
+  padding: 30px;
+  margin-bottom: 0;
+  font-size: 18px;
 }
 
 .gallery_section .gallery_container {

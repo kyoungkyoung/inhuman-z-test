@@ -1084,7 +1084,7 @@ body.modal-open {
 /* info section */
 .info_section {
   position: relative;
-  margin-top: -125px;
+  margin-top: 50px;
 }
 
 .info_section .heading_container {
